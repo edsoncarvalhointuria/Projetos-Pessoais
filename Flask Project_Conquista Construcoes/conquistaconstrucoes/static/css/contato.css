@@ -1,0 +1,50 @@
+/* Estilos para a página de contato */
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+.map-container {
+    margin-top: 1rem;
+}
+
+/* Formulário */
+.form-control {
+    border-radius: 0.5rem;
+}
+
+.btn-primary {
+    border-radius: 0.5rem;
+}
+
+/* Estilo para os ícones */
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 1rem;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }

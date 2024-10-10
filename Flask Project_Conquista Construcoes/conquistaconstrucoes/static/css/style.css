@@ -1,0 +1,43 @@
+/* Estilo para controlar o tamanho da logo na navbar */
+.logo-img {
+    max-height: 60px; /* Ajuste o valor conforme necessário */
+    width: auto;      /* Mantém a proporção da imagem */
+  }
+
+/* Estilo para o ícone do WhatsApp flutuante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px; /* Distância da base da tela */
+    right: 20px;  /* Distância da borda direita */
+    z-index: 999; /* Colocar o ícone na frente de todos os elementos */
+  }
+  
+  .whatsapp-icon {
+    width: 60px;   /* Tamanho do ícone */
+    height: 60px;  /* Tamanho do ícone */
+    border-radius: 50%; /* Tornar o ícone circular */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease-in-out; /* Animação ao passar o mouse */
+  }
+  
+  /* Efeito hover para aumentar o ícone */
+  .whatsapp-icon:hover {
+    transform: scale(1.1); /* Aumenta levemente o ícone ao passar o mouse */
+  }
+
+  /* Adiciona transições suaves */
+.collapse {
+    transition: height 0.35s ease;
+  }
+
+  
+  
+  @media (max-width: 768px) {
+    .carousel-item {
+      height: 30vh; /* Em smartphones, o carrossel ocupará metade da altura da tela */
+    }
+    .carousel-item img {
+      object-fit: contain; /* Em telas menores, mostramos a imagem inteira sem cortes */
+      
+    }
+  }

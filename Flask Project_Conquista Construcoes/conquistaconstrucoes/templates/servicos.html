@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<style>
+    .hero {
+        background-image: url("{{ url_for('static', filename='images/servicos.png')}}");
+        background-blend-mode: darken; 
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+
+    .faq-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.faq-button i {
+  margin-left: auto;
+}
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+  <!-- Hero Section -->
+  <section class="hero bg-image text-white text-center d-flex align-items-center">
+
+    <div class="container">
+      <h1 class="display-4">Nossos Serviços</h1>
+      <p class="lead">Soluções completas em construção e reforma</p>
+    </div>
+  </section>
+
+  <!-- Seção de Serviços -->
+  <section class="services py-5">
+    <div class="container">
+      <div class="row">
+        {% for serv, desc, icon in lista_servicos %}
+          {% if centro and loop.index == lista_servicos | length %}
+          <div class="col-md-4 mb-4 d-md-block d-none">
+          </div>
+          {% endif %}
+          <div class="col-md-4 mb-4">
+            <div class="service-card text-center p-4 shadow">
+              <i class="{{ icon }}"></i>
+              <h5 class="mt-3">{{ serv }}</h5>
+              <p>{{ desc }}</p>
+            </div>
+          </div>
+        {% endfor %}    
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Fazer Orçamento -->
+  <section class="cta bg-light py-5 text-center">
+    <div class="container">
+      <h2>Ficou interessado? Solicite seu orçamento agora!</h2>
+      <a href="{{ whats }}" class="btn btn-primary btn-lg">Solicitar Orçamento</a>
+    </div>
+  </section>
+
+  <!-- Galeria de Imagens de Projetos Anteriores -->
+  <section class="gallery py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nossos Projetos Anteriores</h2>
+      <div class="row">
+        <a href="https://www.instagram.com/p/C4R4nyZt18H/?igsh=MmlnbG13Nmgzd3Fp" class="col-md-4 mb-4">
+          <img src="{{ url_for('static', filename='images/serv04.webp') }}" class="img-fluid" alt="Projeto 1">
+        </a>
+        <a href="https://www.instagram.com/p/CyMlXcTNgUJ/?igsh=aDgyamw5djN5OHNx" class="col-md-4 mb-4">
+          <img src="{{ url_for('static', filename='images/serv03.webp') }}" class="img-fluid" alt="Projeto 2">
+        </a>
+        <a href="https://www.instagram.com/p/CyeneQRNMiJ/?igsh=YTRhamlycndqaXB6" class="col-md-4 mb-4">
+          <img src="{{ url_for('static', filename='images/serv02.webp') }}" class="img-fluid" alt="Projeto 3">
+        </a>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Perguntas Frequentes (FAQ) -->
+  <section class="faq py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Perguntas Frequentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="mb-2 card" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+          <div class="card-header" id="faq1">
+            <h5 class="mb-0">
+              <button class="fw-bold btn faq-button" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                Qual é o tempo médio para execução de uma obra?
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </h5>
+          </div>
+          <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+            <div class="card-body">
+              O tempo varia dependendo do projeto, mas fornecemos uma estimativa precisa após a avaliação inicial.
+            </div>
+          </div>
+        </div>
+        <div class="mb-2 card" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+          <div class="card-header" id="faq2">
+            <h5 class="mb-0">
+              <button class="fw-bold btn faq-button collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                Vocês trabalham com reformas e construções residenciais e comerciais?
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </h5>
+          </div>
+          <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+            <div class="card-body">
+              Sim, nossa equipe é qualificada para atuar tanto em ambientes residenciais quanto comerciais.
+            </div>
+          </div>
+        </div>
+        <div class="card" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          <div class="card-header" id="faq3">
+            <h5 class="mb-0">
+              <button class="fw-bold btn faq-button collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                Como posso solicitar um orçamento?
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </h5>
+          </div>
+          <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+            <div class="card-body">
+              Você pode solicitar um orçamento preenchendo o formulário em nossa página de contato ou ligando diretamente para nós.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}

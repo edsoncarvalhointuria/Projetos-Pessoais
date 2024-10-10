@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sobrenos.css') }}">
+{% endblock %}
+
+{% block content %}
+  <!-- Introdução da Empresa -->
+  <section class="intro-section p-5 company-introduction">
+    <div class="description text-container">
+      <h2>Sobre a Conquista Construções</h2>
+      <p>A Conquista Construções é uma empresa com mais de 8 anos de experiência no setor de construção civil. Especializada em obras residenciais e comerciais, nós nos destacamos pela nossa qualidade, comprometimento e transparência em todas as etapas do projeto.</p>
+    </div>
+    <div class="image">
+      <img src="{{ url_for('static', filename='images/engenharia.png') }}" alt="Imagem Cartoon de Engenharia">
+    </div>
+  </section>
+
+  <!-- Missão, Visão e Valores -->
+  <section class="mission-vision-values p-5">
+    <h2>Missão, Visão e Valores</h2>
+    <hr>
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Missão</h5>
+        <p>Proporcionar soluções de construção de alta qualidade, sempre priorizando a satisfação do cliente.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Visão</h5>
+        <p>Ser referência no setor de construção, reconhecida pela excelência em serviços.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Valores</h5>
+        <p>Qualidade, Transparência e Comprometimento com o Cliente são os pilares que sustentam nossas ações.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="differentials p-5">
+    <h2>Nossos Diferenciais</h2>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="differential-card col-md-3 m-2">
+        <h5>Qualidade Garantida</h5>
+        <p>Utilizamos materiais de primeira linha e práticas construtivas atualizadas.</p>
+      </div>
+      <div class="differential-card col-md-3 m-2">
+        <h5>Transparência Total</h5>
+        <p>Mantemos nossos clientes informados em todas as etapas do projeto.</p>
+      </div>
+      <div class="differential-card col-md-3 m-2">
+        <h5>Atendimento Personalizado</h5>
+        <p>Nosso time está sempre disponível para atender às suas necessidades.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Orçamento -->
+  <section class="m-5 budget-section rounded border border-black">
+    <h3>Pronto para começar seu projeto?</h3>
+    <a class="btn btn-primary" href="{{ whats }}">Solicitar Orçamento</a>
+  </section>
+
+  
+
+  <!-- História da Empresa -->
+
+  <section class="history-section">
+    <div class="container">
+      <h2>História da Empresa</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <img src="{{url_for('static', filename='images/sobrenos/inicio.jpg')}}" alt="Marco 2010">
+          <p>2016</p>
+          <div class="description">
+            <img src="{{url_for('static', filename='images/sobrenos/inicio1.jpg')}}" alt="Marco 2010">
+            <p>Fundação da Conquista Construções.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="{{url_for('static', filename='images/sobrenos/2018.jpg')}}" alt="Marco 2015">
+          <p>2018</p>
+          <div class="description">
+            <img src="{{url_for('static', filename='images/header.jpg')}}" alt="Marco 2015">
+            <p>Primeira grande obra concluída com sucesso.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="{{url_for('static', filename='images/sobrenos/2019.jpg')}}" alt="Marco 2018">
+          <p>2019</p>
+          <div class="description">
+            <img src="{{url_for('static', filename='images/sobrenos/2019s.jpg')}}" alt="Marco 2018">
+            <p>Reconhecimento pela qualidade em serviços.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="{{url_for('static', filename='images/sobrenos/2022.jpg')}}" alt="Marco 2021">
+          <p>2022</p>
+          <div class="description">
+            <img src="{{url_for('static', filename='images/sobrenos/2022s.png')}}" alt="Marco 2021">
+            <p>Expansão para o mercado comercial.</p>
+          </div>
+        </div>
+      
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Depoimentos com Slider -->
+  <section class="testimonial-section">
+    <h2 class="pb-3">O que nossos clientes dizem</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial-card">
+            <p>"A Conquista Construções entregou nossa obra antes do prazo e com qualidade excepcional!"</p>
+            <small>— Ana Silva, Empresa XYZ</small>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card">
+            <p>"Atendimento impecável e profissionais qualificados. Recomendo!"</p>
+            <small>— João Pereira, Cliente Particular</small>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card">
+            <p>"Com certeza a melhor experiência que tivemos em um projeto de construção!"</p>
+            <small>— Carla Santos, Empresa ABC</small>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+
+{% endblock %}
