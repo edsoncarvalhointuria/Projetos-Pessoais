@@ -2,12 +2,14 @@ from conquistaconstrucoes import app
 from flask import render_template, redirect, url_for, request, flash
 from .forms import EnviarEmail
 import yagmail
+import os
 
 email_pessoal = "jacksonconquistaconstrucoes@gmail.com"
 endereco_pessoal = "Rua Desembargador Áureo Cerqueira Leite, 152, São Paulo - SP"
 telefone_pessoal = "(11) 95961-4465"
 
-senha_app = "zzsgnlixqjerijio"
+senha_app = os.environ['SENHA_APP']
+
 
 
 
