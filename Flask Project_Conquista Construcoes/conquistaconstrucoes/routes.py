@@ -66,3 +66,7 @@ def nossos_servicos():
         centro = True
 
     return render_template('servicos.html', lista_servicos=lista_servicos, centro=centro)
+
+@app.route('/google71cdbdd016a1c5b4.html')
+def arquivo_google():
+    return render_template('google71cdbdd016a1c5b4.html')
