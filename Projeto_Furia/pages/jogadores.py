@@ -15,7 +15,7 @@ def show_page():
         
 
     coluna_esquerda, coluna_direita = st.columns([0.7, 2.5])
-    coluna_esquerda.image(f"images/{escolha}.webp") 
+    coluna_esquerda.image(f"Projeto_Furia/images/{escolha}.webp") 
     coluna_direita.title(escolha)
 
     container = coluna_direita.container()
@@ -42,7 +42,7 @@ def show_page():
         """, unsafe_allow_html=True)
             
     ### VIDEO DO JOGADOR
-    st.video(f"videos/{escolha}.mp4")
+    st.video(f"Projeto_Furia/videos/{escolha}.mp4")
 
     ### DESCRIÇÃO DO JOGADOR
     st.write(f"""
@@ -63,7 +63,7 @@ def show_page():
         text='posicao', labels={"posicao invertida": "Colocação 🥇", "posicao": "Colocação 🥇", "torneio": "Torneio 🏆", "ano":"Ano"})
 
     for i, x in enumerate(torneios["torneio"]):### INCLUINDO AS IMAGENS DOS TORNEIOS NO GRÁFICO
-        fig.add_layout_image(source=Image.open("images/campeonatos/"+x+".png"), 
+        fig.add_layout_image(source=Image.open("Projeto_Furia/images/campeonatos/"+x+".png"), 
             x=i,y=-0.2,xref="x",yref="y",xanchor="center",sizex=0.5,sizey=0.5,)
     fig.update_layout(xaxis={"visible":False}, yaxis={"range":[-1.5, max(torneios["posicao invertida"])+0.5], "showticklabels":False})
     fig.update_traces(marker_color=["#FFD700" if posicao == 1 else "#C0C0C0" if posicao == 2 else "#CD7F32" for posicao in torneios['posicao']])

@@ -8,13 +8,13 @@ from datetime import datetime
 
 @st.cache_data
 def carregar_dados(dataframe):
-    df = pd.read_excel(Path(f"dados/{dataframe}"))
+    df = pd.read_excel(Path("Projeto_Furia", f"dados/{dataframe}"))
     df = df.set_index("id")
     return df
 
 @st.cache_data
 def carregar_ranking(dataframe):
-    df = pd.read_excel(Path(f"dados/{dataframe}"))
+    df = pd.read_excel(Path("Projeto_Furia", f"dados/{dataframe}"))
     return df
 
 

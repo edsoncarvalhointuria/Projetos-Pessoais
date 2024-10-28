@@ -62,7 +62,7 @@ def show_page():
     <br>
     """)
     ### IMAGEM CENTRAL
-    st.image('images/equipe.webp', 'Elisa Masters Espoo 2023', use_column_width=True)
+    st.image('Projeto_Furia/images/equipe.webp', 'Elisa Masters Espoo 2023', use_column_width=True)
 
     ### BREVE DESCRIÇÃO SOBRE A FURIA
     st.header("Sobre a Furia")
@@ -100,7 +100,7 @@ def show_page():
                 <img src='app/static/cslogo3.png' width='200px'>
             </div>""")
         else:
-            st.image("images/cslogo3.png", use_column_width=True, width=200)
+            st.image("Projeto_Furia/images/cslogo3.png", use_column_width=True, width=200)
     with col2:
         st.write(
             """
@@ -116,7 +116,7 @@ def show_page():
         dict(title=re.findall(r"\D+",foto.stem)[0],
             text="",
             img= foto.absolute(),
-            link="https://www.instagram.com/furiagg/?hl=pt-br",) for foto in Path("images/Carrossel").iterdir()
+            link="https://www.instagram.com/furiagg/?hl=pt-br",) for foto in Path("Projeto_Furia","images/Carrossel").iterdir()
     ]
  
     carousel(items=fotos, width=1, container_height=450)
@@ -126,7 +126,7 @@ def show_page():
         st.html("""
             <style>
                 iframe[src*="streamlit_carousel"] {
-                    height: auto !important;  /* Ajusta a altura automaticamente */
+                    height: auto !important;  
                 }
             </style>""")
 

@@ -4,7 +4,7 @@ from pages import homepage, jogadores, chat
 
 ### PAGINA GERENCIADORA
     #CONFIGURAÇÕES INICIAIS DA PAGINA
-st.set_page_config(page_title="FURIA CS:GO", page_icon="images/logo.png", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="FURIA CS:GO", page_icon="Projeto_Furia/images/logo.png", layout="wide", initial_sidebar_state="expanded")
 
 ### CRIANDO UMA VARIAVEL PARA GERENCIAR AS PAGINAS
 if "pagina_atual" not in st.session_state:
