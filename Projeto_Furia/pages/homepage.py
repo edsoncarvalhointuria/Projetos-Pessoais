@@ -7,6 +7,7 @@ from funcoes import carregar_noticias
 from streamlit_carousel import carousel
 from streamlit_javascript import st_javascript
 from user_agents import parse
+from PIL import Image
 
 
 
@@ -62,7 +63,7 @@ def show_page():
     <br>
     """)
     ### IMAGEM CENTRAL
-    st.image('Projeto_Furia/images/equipe.webp', 'Elisa Masters Espoo 2023', use_column_width=True)
+    st.image(Image.open('Projeto_Furia/images/equipe.png'), 'Elisa Masters Espoo 2023', use_column_width=True)
 
     ### BREVE DESCRIÇÃO SOBRE A FURIA
     st.header("Sobre a Furia")
