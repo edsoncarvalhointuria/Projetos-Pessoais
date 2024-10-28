@@ -1,6 +1,7 @@
 import streamlit as st
 from groq import Groq
 import os
+from pathlib import Path
 
 ### CHATBOT FURIA
 
@@ -11,7 +12,7 @@ client = Groq(
     api_key=GROQ_API_KEY
 )
 ###PEGANDO CONTEXTO
-with open("dados/contexto.txt", "r") as arquivo:
+with open(Path("dados/contexto.txt"), "r") as arquivo:
     context = arquivo.read()
 
 

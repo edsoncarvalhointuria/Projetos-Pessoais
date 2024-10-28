@@ -2,18 +2,19 @@ import streamlit as st
 import pandas as pd
 import requests
 import os
+from pathlib import Path
 from datetime import datetime
 
 
 @st.cache_data
 def carregar_dados(dataframe):
-    df = pd.read_excel(f"dados/{dataframe}")
+    df = pd.read_excel(Path(f"dados/{dataframe}"))
     df = df.set_index("id")
     return df
 
 @st.cache_data
 def carregar_ranking(dataframe):
-    df = pd.read_excel(f"dados/{dataframe}")
+    df = pd.read_excel(Path(f"dados/{dataframe}"))
     return df
 
 
