@@ -12,7 +12,7 @@ client = Groq(
     api_key=GROQ_API_KEY
 )
 ###PEGANDO CONTEXTO
-with open(Path("dados/contexto.txt"), "r") as arquivo:
+with open(str(Path("dados/contexto.txt").absolute()), "r") as arquivo:
     context = arquivo.read()
 
 
