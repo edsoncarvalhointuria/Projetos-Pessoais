@@ -30,7 +30,7 @@ Site **corporativo** simples, desenvolvido para um microempreendor como parte da
 **Descrição:**
 Site interativo desenvolvido como parte do desafio do processo seletivo para a **Furia Esports.**
 
-🔗 [Acesse o projeto](https://github.com/edsoncarvalhointuria/Projetos-Pessoais/tree/9162e41c638cd3ee8d0d265608d2ddc8f17fbada/Projeto_Furia)
+🔗 [Acesse o projeto](https://github.com/edsoncarvalhointuria/Projetos-Pessoais/tree/04debaa393a2ec4c509cbfe33d1cce792c53804a/Projeto_Furia)
 
 **Tecnologias:**
 `Python 3.8+`, `Streamlit`, `Groq API`, `Pandas`, `Plotly`, `Matplotlib `
