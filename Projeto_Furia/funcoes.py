@@ -32,4 +32,5 @@ def carregar_noticias(pesquisa:str):
                     st.markdown(noticia["description"][:130]+"...", help=noticia["description"])
                     st.markdown(f"[Leia mais]({noticia["url"]})", unsafe_allow_html=True)
     else:
-        st.markdown("Sem noticias no momento...")
+        with st.sidebar:
+            st.markdown("Sem noticias no momento...")
