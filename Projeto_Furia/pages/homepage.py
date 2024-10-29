@@ -53,7 +53,7 @@ def show_page():
     ### INICIO DA PAGINA
     st.html(f"""
     <div style='text-align: center;'>
-        <h1 style='color:#619DED'>FURIA Esports - CS2</h2>
+        <h1 style='color:#619DED'>FURIA Esports - CS</h2>
         <p>FUTURO EM JOGO: Estágio de verão da Cruzeiro do Sul.<p>
         <div class='button-container' style='padding:10px'>
             <a href='https://www.instagram.com/furiagg' style='color:white; text-decoration: none;' class='cta-button'>Siga a FURIA</a>
