@@ -42,7 +42,7 @@ def show_page():
 
     ### ANALISANDO SE NA SESSÃO ATUAL O USUÁRIO JÁ ACESSOU O CHAT
     if "chat" not in st.session_state:
-        st.session_state["chat"] = [{"role": "assistant", "content": "Olá! Em que posso?"}]
+        st.session_state["chat"] = [{"role": "assistant", "content": "Olá! Em que posso ajudar?"}]
 
     ### VENDO SE O USUÁRIO DIGITOU ALGO
     if prompt := st.chat_input():
