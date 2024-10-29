@@ -17,7 +17,7 @@ def carregar_ranking(dataframe):
     df = pd.read_excel(Path("Projeto_Furia", f"dados/{dataframe}"))
     return df
 
-
+@st.cache_data
 def carregar_noticias(pesquisa:str):
     API_KEY = {"X-Api-Key": os.getenv("NEWS_API")}
     link = f"https://newsapi.org/v2/everything?q={pesquisa}&sortBy=popularity&language=pt&apiKey={API_KEY["X-Api-Key"]}"
