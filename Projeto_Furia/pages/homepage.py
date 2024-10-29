@@ -56,7 +56,7 @@ def show_page():
         <h1 style='color:#619DED'>FURIA Esports - CS2</h2>
         <p>FUTURO EM JOGO: Estágio de verão da Cruzeiro do Sul.<p>
         <div class='button-container' style='padding:10px'>
-            <a href='https://www.instagram.com/furiagg' style='color:white; text-decoration: none;' class='cta-button'>Siga a Furia</a>
+            <a href='https://www.instagram.com/furiagg' style='color:white; text-decoration: none;' class='cta-button'>Siga a FURIA</a>
             <a href="https://www.99jobs.com/furia/jobs/398294-estagio-de-verao-cruzeiro-do-sul-tech-engenharia-de-software" style='color:white; text-decoration: none;' class='cta-button'>Junte-se à FURIA</a>
         </div>
     </div>
