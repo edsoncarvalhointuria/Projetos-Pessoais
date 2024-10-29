@@ -98,7 +98,7 @@ def show_page():
         if user_agent.is_mobile:
             st.html("""
             <div style="text-align: center;">
-                <img src='./Projeto_Furia/static/cslogo3.png' width='200px'>
+                <img src='/Projeto_Furia/static/cslogo3.png' width='200px'>
             </div>""")
         else:
             st.image("Projeto_Furia/images/cslogo3.png", use_column_width=True, width=200)
