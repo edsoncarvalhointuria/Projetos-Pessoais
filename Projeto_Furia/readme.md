@@ -3,7 +3,7 @@
 
 Este é um **site interativo desenvolvido com Streamlit** como parte do desafio do processo seletivo para o estágio de verão na Furia Esports, em parceria com a Universidade Cruzeiro do Sul.
 
-**🌐Acesse:** [Streamlit](https://dashboardempresarial-production.up.railway.app/)
+**🌐Acesse:** [Streamlit](https://projeto-furia.streamlit.app/)
 
 ---
 
