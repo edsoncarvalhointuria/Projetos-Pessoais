@@ -116,7 +116,7 @@ def show_page():
     fotos = [
         dict(title=re.findall(r"\D+",foto.stem)[0],
             text="",
-            img= Path("Projeto_Furia/images", foto.name),
+            img= str(foto.absolute()),
             link="https://www.instagram.com/furiagg/?hl=pt-br",) for foto in Path("Projeto_Furia","images/Carrossel").iterdir()
     ]
  
