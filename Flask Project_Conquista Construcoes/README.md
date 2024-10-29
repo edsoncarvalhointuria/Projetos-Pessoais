@@ -1,9 +1,17 @@
  Site de Serviços de Construção e Reforma
 
-Bem-vindo ao repositório do site para uma empresa de construção e reforma, especializada em uma ampla gama de serviços, incluindo elétrica, hidráulica, pintura e muito mais. Este site foi desenvolvido utilizando Python e o framework Flask, garantindo uma experiência otimizada tanto para dispositivos desktop quanto para smartphones. O projeto foi criado como parte das atividades do meu curso de Análise e Desenvolvimento de Sistemas (ADS).
+# 🏗 Conquista Construções
 
+### ✨ Sobre este projeto
 
- Funcionalidades
+Este projeto é um **site comercial** para a empresa Conquista Construções. Ele foi desenvolvido de forma gratuita para um micro empreendedor,  como parte das atividades do meu curso de **Análise e Desenvolvimento de Sistemas.**
+
+**🌐Acesse:** [Site
+](https://conquistaconstrucoes.onrender.com/)
+
+---
+
+### 📊 Funcionalidades
 
 - Página Inicial: Apresenta os principais serviços e um CTA (Call to Action) convidando os usuários a solicitar orçamentos.
 - Sobre Nós: Explica a história e a missão da empresa.
@@ -12,18 +20,24 @@ Bem-vindo ao repositório do site para uma empresa de construção e reforma, es
 - Galeria de Projetos: Exibe imagens dos projetos anteriores.
 - FAQ (Perguntas Frequentes): Seção que responde às principais dúvidas dos clientes sobre os serviços oferecidos.
 
- Tecnologias Utilizadas
+---
 
-- Python 3.9+
-- Flask: Framework backend utilizado para gerenciar rotas e renderizar as páginas.
-- Bootstrap 5: Utilizado para o design responsivo e estilização das páginas.
-- Font Awesome: Biblioteca de ícones para ilustrar os serviços.
-- HTML5/CSS3/JavaScript
+### 🚀 Ferramentas e Bibliotecas
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
+``Python 3.9+``, ``Flask``, ``Bootstrap``, ``Font Awesome``
 
 ---
 
-Se precisar de alguma modificação ou ajuste no README, só avisar!
+### 💌 Quer falar comigo?
+
+Entre em contato:
+
+<p align="left">  
+<a href="mailto:edsoncarvalhointuria@gmail.com" title="Gmail">  
+  <img src="https://img.shields.io/badge/-Gmail-FF0000?style=flat-square&labelColor=FF0000&logo=gmail&logoColor=white" alt="Gmail"/>  
+</a>  
+<a href="#" title="LinkedIn">  
+  <img src="https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>  
+</a>
+
+---
