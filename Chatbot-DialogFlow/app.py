@@ -6,6 +6,15 @@ from funcoes import desenhar_recibo
 
 st.set_page_config(initial_sidebar_state="collapsed", layout="centered")
 
+st.markdown("""
+    <style>
+        /* Esconde a barra de navegação da sidebar */
+        [data-testid="stSidebarNav"] {
+            display: none;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
 #Função para incluir chats na tela
 def add_chats():
     for mensagem in st.session_state.mensagens:
