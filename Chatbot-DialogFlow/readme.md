@@ -5,7 +5,7 @@ Esse projeto foi criado para explorar o uso do Dialogflow na criação de um cha
 
 > ⚠️ **Observação**: Este projeto é apenas para fins de aprendizado e não tem nenhum propósito comercial.
 
-🔗 **Acesse o site**: [Streamlit.io](https://streamlit.io/)
+🔗 **Acesse o site**: [Streamlit.io](https://dialog-flow-bot.streamlit.app/)
 
 ---
 
