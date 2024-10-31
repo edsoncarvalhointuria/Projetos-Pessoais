@@ -4,6 +4,14 @@ from secrets import token_hex
 # Configuração da página
 st.set_page_config(page_title="Pagamento", page_icon="💳", layout="centered", initial_sidebar_state="collapsed")
 
+st.markdown("""
+    <style>
+        /* Esconde a barra de navegação da sidebar */
+        [data-testid="stSidebarNav"] {
+            display: none;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 
 # Título da página
 st.markdown("<h1 style='text-align: center;'>💳 Pagamento</h1>", unsafe_allow_html=True)
