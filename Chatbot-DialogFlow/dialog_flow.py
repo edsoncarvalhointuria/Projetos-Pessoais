@@ -1,8 +1,10 @@
-# from docx import Document <- Comentado para funcionar no streamlit venv
+from docx import Document
 import os
 from pathlib import Path
 from google.cloud import dialogflow_v2 as dialogflow
 import tempfile
+import pip
+
 
 # DEFININDO VARIAVEL DE AMBIENTE COM O CAMINHO PARA O ARQUIVO JSON
 credentials = os.getenv("DIALOGFLOW_GOOGLE_API")
