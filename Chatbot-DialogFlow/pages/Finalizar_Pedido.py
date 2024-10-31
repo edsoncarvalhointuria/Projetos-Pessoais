@@ -2,7 +2,7 @@ import streamlit as st
 from secrets import token_hex
 
 # Configuração da página
-st.set_page_config(page_title="Pagamento", page_icon="💳", layout="centered")
+st.set_page_config(page_title="Pagamento", page_icon="💳", layout="centered", initial_sidebar_state="collapsed")
 
 
 # Título da página
