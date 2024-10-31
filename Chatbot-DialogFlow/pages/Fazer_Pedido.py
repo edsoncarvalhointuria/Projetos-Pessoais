@@ -15,6 +15,15 @@ opcoes_bebida = {"Refrigerante":5, "Suco Natural":4, "Água":200, "Chá Gelado":
 
 st.set_page_config(page_title="Pedido Online - Lanchonete", page_icon="🍔", layout="wide")
 
+st.markdown("""
+    <style>
+        /* Esconde a barra de navegação da sidebar */
+        [data-testid="stSidebarNav"] {
+            display: none;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
 # Cabeçalho
 st.markdown(
     "<h1 style='text-align: center; color: #FF4B4B;'>Pedido Online 🍔🍟</h1>",
