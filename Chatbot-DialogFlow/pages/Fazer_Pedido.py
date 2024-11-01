@@ -13,7 +13,10 @@ opcoes_pedido = {"Hambúrguer":10, "Sanduíche Natural":15, "Salgado":8, "Opçã
 opcoes_acompanhamento = {"Batata Frita":5, "Onion Rings":7, "Salada":500, "Nuggets":13}
 opcoes_bebida = {"Refrigerante":5, "Suco Natural":4, "Água":200, "Chá Gelado":2}
 
-st.set_page_config(page_title="Pedido Online - Lanchonete", page_icon="🍔", layout="wide", initial_sidebar_state="expanded")
+if "sidebar_state" not in st.session_state:
+    st.session_state.sidebar_state = "auto"
+
+st.set_page_config(page_title="Pedido Online - Lanchonete", page_icon="🍔", layout="wide", initial_sidebar_state=st.session_state.sidebar_state)
 
 st.markdown("""
     <style>
@@ -65,6 +68,9 @@ if st.button("Adicionar ao Carrinho"):
         item["valor"] *= int(item["quantidade"])
     st.session_state.pedido.append(item)
     st.success(f"{lanche} adicionado ao carrinho!")
+
+    st.session_state.sidebar_state = "auto" if st.session_state.sidebar_state == "expanded" else "expanded"
+    st.rerun()
 
 # SideBar
 with st.sidebar:
