@@ -13,7 +13,7 @@ opcoes_pedido = {"Hambúrguer":10, "Sanduíche Natural":15, "Salgado":8, "Opçã
 opcoes_acompanhamento = {"Batata Frita":5, "Onion Rings":7, "Salada":500, "Nuggets":13}
 opcoes_bebida = {"Refrigerante":5, "Suco Natural":4, "Água":200, "Chá Gelado":2}
 
-st.set_page_config(page_title="Pedido Online - Lanchonete", page_icon="🍔", layout="wide")
+st.set_page_config(page_title="Pedido Online - Lanchonete", page_icon="🍔", layout="wide", initial_sidebar_state="expanded")
 
 st.markdown("""
     <style>
